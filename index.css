@@ -1,0 +1,47 @@
+/*Index 
+the login pages*/
+
+#loginContainer {    
+    position:absolute;
+    height: 100vh;
+    width: 100%;
+    /* this is the page container for 1 page*/
+}
+
+.loginStructure {
+    flex: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vh;
+    width: 25vw;
+    display: grid;
+    place-items: center;
+    justify-content:center;
+    vertical-align: auto;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    border: 5px rgb(52, 52, 255);
+    background-color: rgba(0, 0, 0, 0.548); 
+    /* black to view individual ids */
+}
+
+#loginPageBooksimg {
+    height: 200px;
+    width: 200px;
+}
+
+#entryBtn {
+    justify-content: space-between;
+    background-color: rgb(60, 60, 182);
+    height: 25px;
+    width: 150px;
+    border-radius: 25px;
+}
+
+p {
+    font-size: medium;
+    font-family:'Courier New', Courier, monospace;
+}
