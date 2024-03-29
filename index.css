@@ -17,13 +17,13 @@ the login pages*/
     height: 70vh;
     width: 25vw;
     display: grid;
-    place-items: center;
+    /* place-items: center; */
     justify-content:center;
     vertical-align: auto;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
-    align-self: center;
-    border: 5px rgb(52, 52, 255);
+    /* align-self: center; */
+    border: 50px rgb(52, 52, 255); /* border not showing*/
     background-color: rgba(0, 0, 0, 0.548); 
     /* black to view individual ids */
 }
@@ -31,6 +31,7 @@ the login pages*/
 #loginPageBooksimg {
     height: 200px;
     width: 200px;
+    margin-top: 100px;
 }
 
 #entryBtn {
@@ -39,9 +40,15 @@ the login pages*/
     height: 25px;
     width: 150px;
     border-radius: 25px;
+    border-style: none;
 }
 
 p {
     font-size: medium;
     font-family:'Courier New', Courier, monospace;
+}
+
+.memberLogin {
+    display:grid;
+    vertical-align:middle;
 }
