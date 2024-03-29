@@ -17,14 +17,12 @@ the login pages*/
     height: 70vh;
     width: 25vw;
     display: grid;
-    /* place-items: center; */
     justify-content:center;
     vertical-align: auto;
-    /* align-items: center; */
     text-align: center;
-    /* align-self: center; */
-    border: 50px rgb(52, 52, 255); /* border not showing*/
-    background-color: rgba(0, 0, 0, 0.548); 
+    border: 5px solid rgb(52, 52, 255);
+    border-radius: 5px;
+    /* background-color: rgba(0, 0, 0, 0.548);  */
     /* black to view individual ids */
 }
 
@@ -34,7 +32,7 @@ the login pages*/
     margin-top: 100px;
 }
 
-#entryBtn {
+#loginBtn {
     justify-content: space-between;
     background-color: rgb(60, 60, 182);
     height: 25px;
@@ -51,4 +49,11 @@ p {
 .memberLogin {
     display:grid;
     vertical-align:middle;
+}
+
+.userInfo {
+    display:grid;
+    vertical-align: auto;
+    align-self: center;
+    text-align: left;
 }

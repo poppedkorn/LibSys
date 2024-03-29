@@ -15,20 +15,20 @@
                 <img id="loginPageBooksimg" class="item" src="Photos/bookDoodle.jpg">
                 <form class="memberLogin" action="/login" method="post">
                     <div>
-                      <label for="username">Username:</label>
-                      <input type="text" id="username" name="username" required>
+                      <label class="userInfo" for="username">Username:</label>
+                      <input type="text" class="userInfo" style="width: 200px;" name="username" required>
                     </div>
                     <div>
-                      <label for="password">Password:</label>
-                      <input type="password" id="password" name="password" required>
+                      <label class="userInfo" for="password">Password:</label>
+                      <input type="password" class="userInfo" style="width: 200px;" name="password" required>
                     </div>
                     <div>
-                      <button type="submit" id="entryBtn">Login</button>
+                      <button type="submit" id="loginBtn" onclick="change()">Login</button>
                     </div>
                   </form>
             <script>
                 function change() {
-                    document.getElementById("entryBtn").style.display='none'
+                    document.getElementById("loginBtn").style.display='none'
                 }
             </script>
             </div>
