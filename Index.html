@@ -13,9 +13,19 @@
         <div id="loginContainer">
             <div class="loginStructure">
                 <img id="loginPageBooksimg" class="item" src="Photos/bookDoodle.jpg">
-            <div class="item"><p>User</p> <input type="text" name="userID"></div>
-            <div class="item"><p>Password</p> <input type="Password" name="Password"></div>
-            <button id="entryBtn" class="item" onclick="change()">ENTER</button>
+                <form class="memberLogin" action="/login" method="post">
+                    <div>
+                      <label for="username">Username:</label>
+                      <input type="text" id="username" name="username" required>
+                    </div>
+                    <div>
+                      <label for="password">Password:</label>
+                      <input type="password" id="password" name="password" required>
+                    </div>
+                    <div>
+                      <button type="submit" id="entryBtn">Login</button>
+                    </div>
+                  </form>
             <script>
                 function change() {
                     document.getElementById("entryBtn").style.display='none'
