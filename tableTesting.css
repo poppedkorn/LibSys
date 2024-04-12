@@ -1,0 +1,88 @@
+#tableContainer {
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    flex-direction: column;
+    /* height: 40vh; */
+    width: 50vw
+  }
+
+  /* .tableT {
+    background-color: rgb(177, 177, 177);
+    height: 30vh;
+    width: 40vw;
+  }
+
+  table, th, td, tr {
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+
+  #AORbtn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+
+  table {
+    width: 100%;
+    /* height:100%; */
+    background-color: pink;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-bottom: 20px;
+  }
+
+  td {
+    width: (100% - 30px)/3;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 30px;
+  }
+
+  td:last-child, th:last-child {
+    border: 1px solid black;
+    width: 30px;
+  }
+
+  td:first-child, th:first-child {
+    padding-left: 10px;
+  }
+
+  th {
+    text-align: left;
+    height: 30px;
+  }
+
+  .borderless {
+    border: none;
+  }
+
+  .mainBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 3px rgba(0, 0, 0, 0.1);
+    background-color: rgb(60, 60, 182);
+    color: white;
+  }
+  
+  /* Hover state */
+  .mainBtn:hover {
+    background-color: rgb(46, 46, 134); /* Darker green */
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
