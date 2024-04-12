@@ -1,70 +1,35 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Library Checkout</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div id="loginContainer">
-            <div class="loginStructure">
-                <img id="loginPageBooksimg" class="item" src="Photos/bookDoodle.jpg">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Library Checkout</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loginContainer">
+        <div class="loginStructure">
+            <img id="loginPageBooksimg" class="item" src="Photos/bookDoodle.jpg">
 
-                <form class="memberLogin" id="myForm" action="homePage.html" method="post">
-                    <div>
-                      <label class="userInfo" id="name" for="username">Username:</label>
-                      <input type="text" class="userInfo" style="width: 200px;" name="username" required>
-                    </div>
+            <form class="memberLogin" id="myForm" action="#" method="post">
+                <div>
+                    <label class="userInfo" id="nameLabel" for="username">Username:</label>
+                    <input type="text" class="userInfo" style="width: 200px;" id="username" name="username" required>
+                </div>
 
-                    <div>
-                      <label class="userInfo" id="token" for="password">Password:</label>
-                      <input type="password" class="userInfo" style="width: 200px;" name="password" required>
-                    </div>
+                <div>
+                    <label class="userInfo" id="passwordLabel" for="password">Password:</label>
+                    <input type="password" class="userInfo" style="width: 200px;" id="password" name="password" required>
+                </div>
 
-                    <div>
-                      <button type="submit" id="loginBtn" >Login</button>
-                    </div>
-                  </form>
-
-            <script>
-                // function change() {
-                //     document.getElementById("loginBtn").style.display='none'
-                // }
-              // document.getElementById('myForm').addEventListener('submit', function(event) {
-              //     // Prevent default form submission
-              //     event.preventDefault();
-
-              //     // Get form values
-              //     var name = document.getElementById('name').value;
-              //     var email = document.getElementById('token').value;
-
-              //     // Create an object to store form data
-              //     var formData = {
-              //         name: name,
-              //         token: token
-              //     };
-
-              //     // Convert object to JSON string
-              //     var formDataJSON = JSON.stringify(formData);
-
-              //     // Store form data in local storage
-              //     localStorage.setItem('formData', formDataJSON);
-
-              //     // Optional: You can clear the form fields after submission
-              //     document.getElementById('name').value = '';
-              //     document.getElementById('token').value = '';
-
-              //     // Optional: You can display a success message
-              //     // alert('Form submitted successfully!');
-              // });
-
-            </script>
-            </div>
+                <div>
+                    <button type="submit" class="mainBtn">Login</button>
+                </div>
+            </form>
         </div>
-        <script src="" async defer></script>
-    </body>
+    </div>
+    <script src="index.js"></script>
+</body>
 </html>

@@ -1,16 +1,31 @@
-/*Index 
-the login pages*/
+/*---------------------------------------------------------------------------------non ID/Class tags------------------------------------------------------------------------------------------*/
 
 body {
     padding: 0;
     margin: 0;
   }
 
+img {
+    width: 130px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+h2 {
+    grid-column: 1 / -1;
+}
+
+p {
+    font-size: medium;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/*---------------------------------------------------------------------------------Index the login pages-------------------------------------------------------------------------------------*/
+
 #loginContainer {    
     position:absolute;
     height: 100vh;
     width: 100%;
-    /* this is the page container for 1 page*/
 }
 
 .loginStructure {
@@ -28,27 +43,12 @@ body {
     border: 5px solid rgb(52, 52, 255);
     border-radius: 5px;
     /* background-color: rgba(0, 0, 0, 0.548);  */
-    /* black to view individual ids */
 }
 
 #loginPageBooksimg {
     height: 200px;
     width: 200px;
     margin-top: 100px;
-}
-
-#loginBtn {
-    justify-content: space-between;
-    background-color: rgb(60, 60, 182);
-    height: 25px;
-    width: 150px;
-    border-radius: 25px;
-    border-style: none;
-}
-
-p {
-    font-size: medium;
-    font-family:'Courier New', Courier, monospace;
 }
 
 .memberLogin {
@@ -62,6 +62,8 @@ p {
     align-self: center;
     text-align: left;
 }
+
+/*-------------------------------------------------------------------------------------homePage-----------------------------------------------------------------------------------------------*/
 
 #mainPage {
     height:fit-content;
@@ -109,7 +111,6 @@ p {
     width: 20vw;
     display: flex;
     flex-direction: column;
-    /* justify-content:space-evenly; */
     align-items: center;
     /* background-color: green; */
     border-right: 3px solid rgb(0, 0, 151);
@@ -124,17 +125,6 @@ p {
     /* background-color: red; */
     padding-left: 20px;
 }
-
-h2 {
-    grid-column: 1 / -1;
-}
-
-/* .bookContainer {
-    height: 25vh;
-    width: 60vw;
-    display: flex;
-    background-color: yellow;
-} */
 
 .bookTitle {
     box-sizing: border-box;
@@ -154,12 +144,6 @@ h2 {
 /* .gridItem {
     background-color: blueviolet;
 } */
-
-img {
-    width: 130px;
-    height: 200px;
-    border-radius: 10px;
-}
 
 .mainBtn {
     display: inline-block;

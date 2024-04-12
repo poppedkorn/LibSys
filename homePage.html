@@ -25,14 +25,13 @@
                   </form>
                   <div id="searchResults"></div>
             </div>
-
             <div id="InformationContainer">
                 <div id="leftContainer">
-                    <button class="mainBtn">My Profile</button>
-                    <button class="mainBtn">My Books</button>
-                    <button class="mainBtn">My Holds</button>
-                    <button class="mainBtn">My Favourites</button>
-                    <button class="mainBtn">Overdue</button>
+                    <button class="mainBtn" onclick="">My Profile</button>
+                    <button class="mainBtn" onclick="">My Books</button>
+                    <button class="mainBtn" onclick="">My Holds</button>
+                    <button class="mainBtn" onclick="">My Favourites</button>
+                    <button class="mainBtn" onclick="">Overdue</button>
                 </div>
                 <div class="rightContainer">
                     <div id="gridContainer">
@@ -117,16 +116,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            document.getElementById("searchForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            
-            // Get the search query from the input field
-            var query = document.getElementById("searchInput").value;
-            
-            // Perform the search (In this example, we just display the search query)
-            document.getElementById("searchResults").innerText = "You searched for: " + query;
-            });
-        </script>
+        <script src="index.js"></script>
     </body>
 </html>
