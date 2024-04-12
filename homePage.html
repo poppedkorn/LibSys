@@ -11,7 +11,19 @@
     
     <body>
         <div id="mainPage">
-            <div id="topBar"></div>
+            
+            <div id="topBar">
+                <div id="leftTop">
+                    <p>Hello__,__ username</p>
+                    <button class="mainBtn">logout</button>
+                </div>
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    <button type="submit">Search</button>
+                  </form>
+                  <div id="searchResults"></div>
+            </div>
+
             <div id="InformationContainer">
                 <div id="leftContainer">
                     <button class="mainBtn">My Profile</button>
@@ -21,7 +33,56 @@
                     <button class="mainBtn">Overdue</button>
                 </div>
                 <div class="rightContainer">
-                    <div class="bookContainer">
+                    <div id="gridContainer">
+                        <h2><b>Recently Added</b></h2>
+                        <div class="gridItem">
+                            <img src="Photos/ABrideByMorning-KatrinaKendrick.jpg" alt="ABrideByMorning-KatrinaKendrick">
+                            <p class="bookTitle"><b>A Bride By Morning</b> - Katrina Kendricks</p>
+                        </div>
+                        <div class="gridItem">
+                            <img src="Photos/RedDirtHome-RenaeBlack.jpg" alt="RedDirtHome-RenaeBlack">
+                        </div>
+                        <div class="gridItem">
+                            <img src="Photos/TheBookOfLove-KellyLink.jpg" alt="TheBookOfLove-KellyLink">
+                        </div>
+                        <div class="gridItem">
+                            <img src="Photos/FoxLight-KatyaBalen.jpg" alt="FoxLight-KatyaBalen">
+                        </div>
+                        <div class="gridItem">
+                            <img src="Photos/ImpossibleCreatures-KatherineRundell.jpg" alt="ImpossibleCreatures-KatherineRundell">
+                        </div>
+                        <div class="gridItem">
+                            <img src="Photos/TheLifeOfMartinLutherKing-JonathanEig.jpg" alt="TheLifeOfMartinLutherKing">
+                        </div>
+                        <h2>My Books</h2>
+                        <div class="gridItem">
+                            <img src="Photos/FoxLight-KatyaBalen.jpg" alt="FoxLight-KatyaBalen">
+                        </div>
+                        <div class="gridItem">
+                            <img src="Photos/ImpossibleCreatures-KatherineRundell.jpg" alt="ImpossibleCreatures-KatherineRundell">
+                        </div>
+                        <div class="gridItem">
+                            <img src="Photos/OctoberOctober-KatyaBalen.jpg" alt="OctoberOctober-KatyaBalen">
+                        </div>
+                        <div class="gridItem">
+                            <img src="Photos/LittleSureShot-MattRalphs.jpg" alt="LittleSureShot-MattRalphs">
+                        </div>
+                        <h2>My Books</h2>
+                        <div class="gridItem">
+                            <img src="Photos/FoxLight-KatyaBalen.jpg" alt="FoxLight-KatyaBalen">
+                        </div>
+                        <div class="gridItem">
+                            <img src="Photos/ImpossibleCreatures-KatherineRundell.jpg" alt="ImpossibleCreatures-KatherineRundell">
+                        </div>
+                        <div class="gridItem">
+                            <img src="Photos/OctoberOctober-KatyaBalen.jpg" alt="OctoberOctober-KatyaBalen">
+                        </div>
+                        <div class="gridItem">
+                            <img src="Photos/LittleSureShot-MattRalphs.jpg" alt="LittleSureShot-MattRalphs">
+                        </div>
+
+                    </div>
+                    <!-- <div class="bookContainer">
                         <h5>Recently Added</h5>
                         <img src="Photos/ABrideByMorning-KatrinaKendrick.jpg" alt="ABrideByMorning-KatrinaKendrick">
                         <img src="Photos/RedDirtHome-RenaeBlack.jpg" alt="RedDirtHome-RenaeBlack">
@@ -50,12 +111,21 @@
                         <img src="Photos/FoxLight-KatyaBalen.jpg" alt="FoxLight-KatyaBalen">
                         <img src="Photos/GoldenBoys-PhilStamper.jpg" alt="GoldenBoys-PhilStamper">
                         <img src="Photos/LittleSureShot-MattRalphs.jpg" alt="LittleSureShot-MattRalphs">
-                    </div>
-                    <div class="bookContainer"></div>
+                    </div> -->
+                    <!-- <div class="bookContainer"></div> -->
                 </div>
             </div>
         </div>
-        
-        <script src="" async defer></script>
+        <script>
+            document.getElementById("searchForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Get the search query from the input field
+            var query = document.getElementById("searchInput").value;
+            
+            // Perform the search (In this example, we just display the search query)
+            // document.getElementById("searchResults").innerText = "You searched for: " + query;
+            });
+        </script>
     </body>
 </html>
