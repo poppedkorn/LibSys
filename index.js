@@ -24,12 +24,41 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 });
 
 /*---------------------------------------------------------------------homePage---------------------------------------------------------------------------------------------------------------- */
-document.getElementById("searchForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+// document.getElementById("searchForm").addEventListener("submit", function(event) {
+//     event.preventDefault();
     
-    // Get the search query from the input field
-    var query = document.getElementById("searchInput").value;
+//     // Get the search query from the input field
+//     var query = document.getElementById("searchInput").value;
     
-    // Perform the search (In this example, we just display the search query)
-    document.getElementById("searchResults").innerText = "You searched for: " + query;
-    });
+//     // Perform the search (In this example, we just display the search query)
+//     document.getElementById("searchResults").innerText = "You searched for: " + query;
+//     });
+
+function logout() {
+    console.log("dicknballz");
+    window.location.href = "Index.html";
+}
+/*-----------------------------------------------------------------------window--------------------------------------------------------------------------------------------------------------- */
+function showHome() {
+    window.location.href="homePage.html";
+}
+
+function showHolds() {
+    window.location.href="memberHolds.html";
+}
+
+function getUsername() {
+            // Retrieve user data from local storage
+            var userDataJSON = localStorage.getItem('userData');
+
+            // Parse the JSON string back to an object
+            var userData = JSON.parse(userDataJSON);
+            
+            // Access the username
+            var username = userData.username;
+            
+            // Display the username
+            var div = document.getElementById('usernameDisplay');
+
+            div.textContent = "Welcome, " + username + "!";
+}

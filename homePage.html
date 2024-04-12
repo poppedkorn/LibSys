@@ -7,6 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="menu.css">
+        <script src="index.js"></script>
     </head>
     
     <body>
@@ -14,10 +16,10 @@
             
             <div id="topBar">
                 <div id="leftTop">
-                    <p style="color: white;">Hello__,__ Username</p>
-                    <form action="Index.html" method="post">
-                        <button class="mainBtn" type="submit">logout</button>
-                    </form>
+                    <div id="usernameDisplay"></div>
+
+                        <button class="logBtn" type="submit" onclick="logout()">logout</button>
+
                 </div>
                 <form id="searchForm">
                     <input type="text" id="searchInput" placeholder="Search...">
@@ -27,13 +29,14 @@
             </div>
             <div id="InformationContainer">
                 <div id="leftContainer">
-                    <button class="mainBtn" onclick="">My Profile</button>
+                    <button class="mainBtn" onclick="showHome()">My Profile</button>
                     <button class="mainBtn" onclick="">My Books</button>
-                    <button class="mainBtn" onclick="">My Holds</button>
+                    <button class="mainBtn" onclick="showHolds()">My Holds</button>
                     <button class="mainBtn" onclick="">My Favourites</button>
                     <button class="mainBtn" onclick="">Overdue</button>
+                    <div id="bottomBlock"></div>
                 </div>
-                <div class="rightContainer">
+                <div id="rightContainer">
                     <div id="gridContainer">
                         <h2><b>Recently Added</b></h2>
                         <div class="gridItem">
@@ -112,10 +115,38 @@
                             <p class="bookTitle"><b>Little Sure Shot</b> - Matt Ralphs</p>
                         </div>                        
                     </div>
-                    <div class="bookContainer"></div>
+                    <div id="categoryGridContainer">
+                        <h2 style="margin-bottom: -30px;">Categories</h2>
+                        <div class="categoryGridItem">
+                            <img src="Photos/Biography-Genre.jpg" alt="Biography" style="height: 200px; width: 250px;">
+                            <button class="categoryBtn">Biography</button>
+                        </div>
+                        <div class="categoryGridItem">
+                            <img src="Photos/Childrens-Genre.jpg" alt="Children" style="height: 200px; width: 250px;">
+                            <button class="categoryBtn">Children</button>
+                        </div>
+                        <div class="categoryGridItem">
+                            <img src="Photos/Mystery-Genre.jpg" alt="Mystery" style="height: 200px; width: 250px;">
+                            <button class="categoryBtn">Mystery</button>
+                        </div>
+                        <div class="categoryGridItem">
+                            <img src="Photos/Romance-Genre.jpg" alt="Romance" style="height: 200px; width: 250px;">
+                            <button class="categoryBtn">Romance</button>
+                        </div>
+                        <div class="categoryGridItem">
+                            <img src="Photos/SciFi-Genre.jpg" alt="Sci-Fi" style="height: 200px; width: 250px;">
+                            <button class="categoryBtn">Science Fiction</button>
+                        </div>
+                        <div class="categoryGridItem">
+                            <img src="Photos/Fantasy-Genre.jpg" alt="Fantasy" style="height: 200px; width: 250px;">
+                            <button class="categoryBtn">Fantasy</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <script src="index.js"></script>
+        <script>
+            getUsername()
+        </script>
     </body>
 </html>
