@@ -1,6 +1,11 @@
 /*Index 
 the login pages*/
 
+body {
+    padding: 0;
+    margin: 0;
+  }
+
 #loginContainer {    
     position:absolute;
     height: 100vh;
@@ -70,7 +75,25 @@ p {
     width: 100vw; 
     display: flex;
     flex-direction: row;
-    background-color: rgb(60, 60, 182);
+    /* background-color: rgb(60, 60, 182); */
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#leftTop {
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: rgb(0, 0, 151);
+    border-right: 3px solid rgb(0, 0, 151);
+}
+
+#usernameDisplay {
+    padding-left: 100px;
+    padding-right: 1500px;
 }
 
 #InformationContainer {
@@ -78,7 +101,7 @@ p {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: black;
+    /* background-color: black; */
 }
 
 #leftContainer {
@@ -86,38 +109,62 @@ p {
     width: 20vw;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    /* justify-content:space-evenly; */
     align-items: center;
-    background-color: green;
+    /* background-color: green; */
+    border-right: 3px solid rgb(0, 0, 151);
+    
 }
 
 .rightContainer {
     height: auto;
-    width: 80vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
-    background-color: red;
+    /* background-color: red; */
+    padding-left: 20px;
 }
 
-.bookContainer {
+h2 {
+    grid-column: 1 / -1;
+}
+
+/* .bookContainer {
     height: 25vh;
     width: 60vw;
     display: flex;
     background-color: yellow;
+} */
+
+.bookTitle {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: small;
+    overflow-wrap: break-word;
+    text-align: center;
 }
 
-/* .mainBtn {
-    justify-content: space-between;
-    background-color: rgb(60, 60, 182);
-    height: 50px;
-    width: 150px;
-    border-radius: 25px;
-    border-color: black;
+#gridContainer {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(6, 130px);
+    width: auto;
+}
+
+/* .gridItem {
+    background-color: blueviolet;
 } */
+
+img {
+    width: 130px;
+    height: 200px;
+    border-radius: 10px;
+}
 
 .mainBtn {
     display: inline-block;
     padding: 10px 20px;
+    margin-top: 30px;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -132,5 +179,5 @@ p {
   
   /* Hover state */
   .mainBtn:hover {
-    background-color: rgb(46, 46, 134); /* Darker green */
+    background-color: rgb(46, 46, 134);
   }
