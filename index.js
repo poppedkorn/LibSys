@@ -35,7 +35,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 //     });
 
 function logout() {
-    console.log("dicknballz");
+    console.log("test");
     window.location.href = "Index.html";
 }
 /*-----------------------------------------------------------------------window--------------------------------------------------------------------------------------------------------------- */
@@ -45,6 +45,10 @@ function showHome() {
 
 function showHolds() {
     window.location.href="memberHolds.html";
+}
+
+function showOverdue() {
+    window.location.href="MemberOverdue.html"
 }
 
 function getUsername() {
