@@ -12,8 +12,10 @@
     <div id="loginContainer">
         <div class="loginStructure">
             <img id="loginPageBooksimg" class="item" src="Photos/bookDoodle.jpg">
-
-            <form class="memberLogin" id="myForm" action="#" method="post">
+            <button class="loginBtn" onclick="openForm(this)">login</button>
+            <button class="loginBtn" onclick="openForm(this)">Sign up</button>
+            <button class="loginBtn" onclick="openForm(this)">Admin</button>
+            <form class="memberLogin" id="myForm" action="#" method="post" style=display:none>
                 <div>
                     <label class="userInfo" id="nameLabel" for="username">Username:</label>
                     <input type="text" class="userInfo" style="width: 200px;" id="username" name="username" required>
@@ -31,5 +33,16 @@
         </div>
     </div>
     <script src="index.js"></script>
+    <script>
+        function openForm(btn) {
+            var x = document.getElementById("myForm");
+            var buttons = document.getElementsByClassName("loginBtn");
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].style.display = "none";
+            }
+            x.style.display = "block";
+        };
+    </script>
+    
 </body>
 </html>

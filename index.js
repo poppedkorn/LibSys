@@ -51,6 +51,15 @@ function showOverdue() {
     window.location.href="MemberOverdue.html"
 }
 
+function showBooks() {
+    var gridItems = document.querySelectorAll("#gridContainer .gridItem");
+    for (var i = 0; i < gridItems.length; i++) {
+        if (!gridItems[i].querySelector("h2") || gridItems[i].querySelector("h2").innerText !== "My Books") {
+            gridItems[i].style.display = "none";
+        }
+    }
+}
+
 function getUsername() {
             // Retrieve user data from local storage
             var userDataJSON = localStorage.getItem('userData');

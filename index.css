@@ -23,22 +23,25 @@ p {
 /*---------------------------------------------------------------------------------Index the login pages-------------------------------------------------------------------------------------*/
 
 #loginContainer {    
-    position:absolute;
+    /* position:absolute; */
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .loginStructure {
-    flex: 2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* flex: 2; */
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
     height: 70vh;
     width: 25vw;
     display: grid;
     justify-content:center;
-    vertical-align: auto;
+    vertical-align: center;
     text-align: center;
     border: 5px solid rgb(52, 52, 255);
     border-radius: 5px;
@@ -61,6 +64,29 @@ p {
     vertical-align: auto;
     align-self: center;
     text-align: left;
+}
+
+.loginBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    width:10vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 3px rgba(0, 0, 0, 0.1);
+    background-color: rgb(60, 60, 182);
+    color: white;
+}
+
+.loginBtn:hover {
+    background-color: rgb(46, 46, 134);
 }
 
 /*-------------------------------------------------------------------------------------homePage-----------------------------------------------------------------------------------------------*/
