@@ -32,72 +32,57 @@
                     <button class="mainBtn" onclick="showHome()">My Profile</button>
                     <button class="mainBtn" onclick="showBooks()">My Books</button>
                     <button class="mainBtn" onclick="showHolds()">My Holds</button>
-                    <button class="mainBtn" onclick="showFavourites()">My Favourites</button>
                     <button class="mainBtn" onclick="showOverdue()">Overdue</button>
+                    <button class="mainBtn" onclick="showMember()">Add New Member</button>
                     <div id="bottomBlock"></div>
                 </div>
                 <div id="tableContainer2">
                     <h2 id="memberHolds">Member Overdue Books</h2>
                     <div class="tableOverdue">
                         <h2>Member Name / Book / Due Date</h2>
-                        <table class="tableT">
-                            <tr>
-                                <th>Name</th>
-                                <th>Author</th>
-                                <th>ISBN</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>The Space Between</td>
-                                <td>Lauren Keenan</td>
-                                <td> 9781776950812</td>
-                                <td>  N</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                        <table class="tableT" id="testTable">
+                            <thead>
+                                <tr>
+                                    <th>name</th>
+                                    <th>author</th>
+                                    <th>ISBN</th>
+                                    <th>Y/N</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                            </tbody>
                         </table>
                         <div id="AORbtn">
-                        <button class="mainBtn">Add to Catalogue</button>
+                        <button class="mainBtn" id="addBtn">Add to Catalogue</button>
                         <button class="mainBtn">Remove from Catalogue</button>
+                        <label for="books">choose book</label>
+                        <select name="books" id="books"></select>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <script>getUsername()</script>
+        <script>getValue()</script>
+        <script>
+            var selectElement = document.getElementById('books');
+            fetch('books.json')
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(book => {
+                        var option = document.createElement('option');
+                        option.value = book.title;
+                        option.textContent = book.title;
+                        selectElement.appendChild(option);
+                    });
+                });
+        </script>
     </body>
 </html>

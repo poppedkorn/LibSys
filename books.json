@@ -1,0 +1,62 @@
+[
+    {
+        "title": "A Bride by Morning",
+        "author": "Katrina Kendrick",
+        "ISBN": "0678933",
+        "poster": "Photos/ABrideByMorning-KatrinaKendrick.jpg"
+    },
+    {
+        "title": "A Little Bit Country",
+        "author": "Debbie Macomber",
+        "ISBN": "1756346",
+        "poster": "Photos/ALittleBitCountry-DebbieMacomber.jpg"
+    },
+    {
+        "title": "Fox Light",
+        "author": "Katya Balen",
+        "ISBN": "23546567",
+        "poster": "Photos/FoxLight-KatyaBalen.jpg"
+    },
+    {
+        "title": "Golden Boys",
+        "author": "Phil Stamper",
+        "ISBN": "312345376",
+        "poster": "Photos/GoldenBoys-PhilStamper"
+    },
+    {
+        "title": "Impossible Creatures",
+        "author": "Katherine Rundell",
+        "ISBN": "44567844",
+        "poster": "Photos/ImpossibleCreatures-KatherineRundell.jpg"
+    },
+    {
+        "title": "Little Sure Shot",
+        "author": "Matt Raphs",
+        "ISBN": "534567354",
+        "poster": "Photos/LittleSureShot-MattRalphs.jpg"
+    },
+    {
+        "title": "October October",
+        "author": "Katya Balen",
+        "ISBN": "63345654",
+        "poster": "Photos/OctoberOctober-KatyaBalen.jpg"
+    },
+    {
+        "title": "Red Dirt Home",
+        "author": "Renae Black",
+        "ISBN": "72345634",
+        "poster": "Photos/RedDirtHome-RenaeBlack.jpg"
+    },
+    {
+        "title": "The Book Of Love",
+        "author": "Kelly Link",
+        "ISBN": "83456454",
+        "poster": "Photos/TheBookOfLove-KellyLink.jpg"
+    },
+    {
+        "title": "The Life Of Martin Luther King",
+        "author": "Jonathan Eig",
+        "ISBN": "9345645",
+        "poster": "Photos/TheLifeOfMartinLutherKing-JonathanEig.jpg"
+    }
+]

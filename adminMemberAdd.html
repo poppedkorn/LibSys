@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="menu.css">
+        <link href="MemberAdd.css" rel="stylesheet" type="text/css">
+        <script src="index.js"></script>
+    </head>
+
+<body>
+    <div id="mainPage">
+            
+        <div id="topBar">
+            <div id="leftTop">
+                <div id="usernameDisplay"></div>
+                    <button class="logBtn" type="submit" onclick="logout()">logout</button>
+            </div>
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit">Search</button>
+              </form>
+              <div id="searchResults"></div>
+        </div>
+        <div id="InformationContainer">
+            <div id="leftContainer">
+                <button class="mainBtn" onclick="showHome()">My Profile</button>
+                <button class="mainBtn" onclick="showBooks()">My Books</button>
+                <button class="mainBtn" onclick="showHolds()">My Holds</button>
+                <button class="mainBtn" onclick="showOverdue()">Overdue</button>
+                <button class="mainBtn" onclick="showMember()">Add New Member</button>
+                <div id="bottomBlock"></div>
+            </div>
+        <div id="rightContainer">
+            <div id="addBox">
+                <label id="addLabel">Add Members</label>
+                <div class="inputBox" id="userCardBox">
+                <label class="boxLabel">Library Card Number</label>
+                <input id="userCardNum" type="text" ></input>
+                </div>
+                <div class="inputBox" id="userNameBox">
+                <label class="boxLabel">Name</label>
+                <input id="userName" type="text" ></input>
+                </div>
+                <div class="inputBox" id="userPhoneBox">
+                <label class="boxLabel">Phone</label>
+                <input id="userPhone" type="text" ></input>
+                </div>
+                <div class="inputBox" id="userEmailBox">
+                <label class="boxLabel">Email</label>
+                <input id="userEmail" type="email" ></input>
+                </div>
+                <div class="inputBox" id="userAddressBox">
+                <label class="boxLabel">Address</label>
+                <input id="userAddress" type="text" ></input>
+                </div>
+            </div>
+            <div id="editBox">
+                <label id="editLabel">Edit Members</label>
+                <div class="inputBox" id="userCardBox">
+                <label class="boxLabel">Library Card Number</label>
+                <input id="editCardNum" type="text" ></input>
+                </div>
+                <div class="inputBox" id="userNameBox">
+                <label class="boxLabel">Name</label>
+                <input id="editName" type="text" ></input>
+                </div>
+                <div class="inputBox" id="userEmailBox">
+                <label class="boxLabel">Email</label>
+                <input id="editEmail" type="email" ></input>
+                </div>
+            </div>
+	    </div>
+    </div>
+	<script>getUsername()</script>
+</body>
+</html>

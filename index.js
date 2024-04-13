@@ -48,7 +48,11 @@ function showHolds() {
 }
 
 function showOverdue() {
-    window.location.href="MemberOverdue.html"
+    window.location.href="MemberOverdue.html";
+}
+
+function showMember() {
+    window.location.href="adminMemberAdd.html";
 }
 
 function showBooks() {
@@ -74,4 +78,45 @@ function getUsername() {
             var div = document.getElementById('usernameDisplay');
 
             div.textContent = "Welcome, " + username + "!";
+}
+
+/*-----------------------------------------------------------------------------------------Table------------------------------------------------------------------------------- */
+
+function getValue() {
+    const submitbtn = document.getElementById("addBtn");
+    const testTable = document.querySelector("#testTable tbody");
+    let rowIndex = 0;
+    
+    submitbtn.addEventListener("click", () => {
+        var selectElement = document.getElementById('books');
+        var selectedValue = selectElement.value;
+        const rows = testTable.querySelectorAll("tr");
+
+        fetch('books.json')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(book => {
+                if (selectedValue === book.title) {
+                    if (rowIndex<rows.length) {
+                        rows[rowIndex].innerHTML = `
+                        <td>${book.title}</td>
+                        <td>${book.author}</td>
+                        <td>${book.ISBN}</td>
+                        <td>9000</td>
+                        `;
+                    } else {
+                        const newRow = document.createElement('tr');
+                        newRow.innerHTML = `
+                        <td>${book.title}</td>
+                        <td>${book.author}</td>
+                        <td>${book.ISBN}</td>
+                        <td>9000</td>
+                        `;
+                        testTable.appendChild(newRow);
+                    } 
+                    rowIndex++;
+                }
+            });
+        });
+    });
 }
