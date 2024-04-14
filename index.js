@@ -56,12 +56,7 @@ function showMember() {
 }
 
 function showBooks() {
-    var gridItems = document.querySelectorAll("#gridContainer .gridItem");
-    for (var i = 0; i < gridItems.length; i++) {
-        if (!gridItems[i].querySelector("h2") || gridItems[i].querySelector("h2").innerText !== "My Books") {
-            gridItems[i].style.display = "none";
-        }
-    }
+    window.location.href="myBooks.html";
 }
 
 function getUsername() {
