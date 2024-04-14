@@ -24,15 +24,15 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 });
 
 /*---------------------------------------------------------------------homePage---------------------------------------------------------------------------------------------------------------- */
-// document.getElementById("searchForm").addEventListener("submit", function(event) {
-//     event.preventDefault();
+document.getElementById("searchForm").addEventListener("submit", function(event) {
+    event.preventDefault();
     
-//     // Get the search query from the input field
-//     var query = document.getElementById("searchInput").value;
+    // Get the search query from the input field
+    var query = document.getElementById("searchInput").value;
     
-//     // Perform the search (In this example, we just display the search query)
-//     document.getElementById("searchResults").innerText = "You searched for: " + query;
-//     });
+    // Perform the search (In this example, we just display the search query)
+    document.getElementById("searchResults").innerText = "You searched for: " + query;
+    });
 
 function logout() {
     console.log("test");
